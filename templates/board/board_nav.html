@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1 class="title">GOO:D</h1>
+            <div class="category">
+                <ul>
+                    <li><a href="{% url 'board:kbo' %}">KBO 야구</a></li>
+                    <li>K리그 축구</li>
+                    <li>KBL 농구</li>
+                    <li>KOVO 배구</li>
+                </ul>
+            </div>
+        </div>
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+</body>
+</html>

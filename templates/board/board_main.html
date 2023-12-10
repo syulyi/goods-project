@@ -1,38 +1,11 @@
-
+{% extends 'board/board_nav.html' %}
 {% load static %}
 
+{% block content %}
 <div class="container">
-    <div class="nav">
-        <h1 class="title">GOO:D</h1>
-        <div class="category">
-            <ul>
-                <li>KBO 야구</li>
-                <li>K리그 축구</li>
-                <li>KBL 농구</li>
-                <li>KOVO 배구</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="contents">
-        <p>언제 어디서나 즐기는<br>라이프스타일의 중실, KBO리그</p>
-        <button id="#">
-            들어가기
+    <p>언제 어디서나 즐기는<br>라이프스타일의 중실, KBO리그</p>
+        <button> <a href="{% url 'board:kbo' %}">들어가기</a>
         </button>
-    </div>
 </div>
-{% comment %}
-{% if board_list %}
-    <ul>
-        <h2>sy's board</h2>
-    {% for board in board_list %}
-        <li>
-            <a href="/board/{{ board.id }}/">{{ board.subject }}</a>
-                {{ board.create_date }}
-        </li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>게시글이 없습니다.</p>
-{% endif %}
-{% endcomment %}
+
+{% endblock %}
