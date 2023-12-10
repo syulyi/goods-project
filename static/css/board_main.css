@@ -1,0 +1,17 @@
+.container {
+    width: 1920px;
+}
+
+.image-container {
+    position: relative;
+    width: 1920px;
+    height: 893px;
+}
+
+.image-text {
+    font-size: 100px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    background-color: pink;
+}
