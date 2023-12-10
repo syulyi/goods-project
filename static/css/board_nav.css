@@ -1,0 +1,45 @@
+* {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+    width: 1920px;
+    height: 100px;
+}
+
+.nav {
+    width: 1920px;
+    height: 100px;
+    display: flex;
+}
+
+.title {
+    height: 30px;
+    flex-direction: column;
+    font-weight: 900;
+    margin: 35px 470px 35px 115px;
+    font-size: 32px;
+}
+
+.category ul {
+    display: flex;
+    margin-top: 40px;
+}
+
+li {
+    margin-right: 63px;
+}
+
+.pathBox ul {
+    display: flex;
+    margin-top: 102px;
+    margin-left: 150px;
+}
+
+.pathBox li {
+    margin-right: 7px;
+}
+

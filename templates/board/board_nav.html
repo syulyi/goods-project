@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 {% load static %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/board_nav.css' %}">
 
 <body>
     <div class="container">
         <div class="nav">
-            <h1 class="title">GOO:D</h1>
+            <p class="title">GOO:D</p>
             <div class="category">
                 <ul>
                     <li><a href="{% url 'board:kbo' %}">KBO 야구</a></li>
