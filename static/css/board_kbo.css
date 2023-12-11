@@ -30,3 +30,17 @@ ul li img{
     font-weight: 400;
     margin: 14px 0px 0px;
 }
+
+.category-kbo ul {
+    margin-left: 152px;
+}
+
+.category_kbo_1 {
+    display:flex;
+    margin-right: 32px;
+}
+
+.category_kbo_2 {
+    display:flex;
+    margin-right: 40px;
+}
