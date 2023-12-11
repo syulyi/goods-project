@@ -1,5 +1,6 @@
 .container {
     width: 1920px;
+
 }
 
 .image-container {
@@ -8,10 +9,32 @@
     height: 893px;
 }
 
+.text-overlay {
+    width: 1400px;
+    flex-shrink: 0;
+    position: absolute;
+    position: relative;
+    transform: translate(6%, -150%);
+}
+
 .image-text {
     font-size: 100px;
     color: #FFF;
     font-style: normal;
     font-weight: 700;
-    background-color: pink;
+}
+
+button {
+    width: 296px;
+    height: 94px;
+    font-size: 28px;
+    border: none;
+    border-radius: 5px;
+}
+
+button > p {
+    width: 104px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: center;
 }

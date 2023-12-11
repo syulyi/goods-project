@@ -1,24 +1,26 @@
 {% extends 'board/board_nav.html' %}
-{% load static %}
-
 {% block content %}
-<div class="container">
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
+    <div class="container">
 
-    <div class="contents">
-        <div class="mainBox">
-            <div class="pathBox">
-                <img src="{% static 'image/icon_home.png' '%}" class="icon_home">
-                <ul>
-                    <li><a href="{% url 'board:main' %}">HOME</a></li>
-                    <li>/</li>
-                    <li><a href="{% url 'board:kbo' %}">KBO 야구</a></li>
-                </ul>
-                <p><a href="{% url 'board:main' %}">HOME</a></p>
-                <p>KBO 야구</p>
+        <div class="contents">
+            <div class="mainBox">
+                <div class="pathBox">
+                    <ul>
+                        <li><img src="{% static 'image/icon_home_3.png' '%}" class="icon_home"></li>
+                        <li><a href="{% url 'board:main' %}">HOME</a></li>
+                        <li>/</li>
+                        <li><a href="{% url 'board:kbo' %}">KBO 야구</a></li>
+                    </ul>
+                </div>
+                <div class="mainText">
+                    <p>KBO 야구</p>
+                </div>
             </div>
+            <div>
 
-            <h1>KBO 야구</h1>
+            </div>
         </div>
     </div>
-</div>
 {% endblock %}

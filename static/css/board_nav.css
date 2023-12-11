@@ -2,7 +2,14 @@
     text-decoration: none;
     color: inherit;
     list-style: none;
+    box-shadow: none;
     font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
 }
 
 .nav {
@@ -11,11 +18,14 @@
     display: flex;
 }
 
+.nav p {
+    height: 30px
+}
+
 .title {
-    height: 30px;
     flex-direction: column;
     font-weight: 900;
-    margin: 35px 470px 35px 115px;
+    margin: 26px 470px 44px 115px;
     font-size: 32px;
 }
 

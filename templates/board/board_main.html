@@ -1,16 +1,17 @@
 {% extends 'board/board_nav.html' %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'css/board_main.css' %}">
-
 {% block content %}
-<div class="container">
-    <div class="image-container">
-        <img src="{% static 'image/main_002.png' %}">
-        <div class="text-overlay">
-            <p class="image-text">언제 어디서나 즐기는<br>라이프스타일의 중심, KBO리그</p>
-            <button> <a href="{% url 'board:kbo' %}">들어가기</a></button>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_main.css' %}">
+    <div class="container">
+        <div class="image-container">
+            <img src="{% static 'image/main_002.png' %}">
+            <div class="text-overlay">
+                <p class="image-text">언제 어디서나 즐기는<br>라이프스타일의 중심, KBO리그</p>
+                <a href="{% url 'board:kbo' %}">
+                    <button>들어가기</button>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
 {% endblock %}
