@@ -32,15 +32,28 @@ ul li img{
 }
 
 .category-kbo ul {
-    margin-left: 152px;
+    margin: 128px 0px 46px 152px;
 }
 
 .category_kbo_1 {
     display:flex;
+    padding: 0;
+}
+
+.category_kbo_1 li {
     margin-right: 32px;
 }
 
 .category_kbo_2 {
     display:flex;
+    padding: 0;
+}
+
+.category_kbo_2 li {
     margin-right: 40px;
+}
+
+/* 구단 이미지 + 들어가기 */
+.kbo-teams {
+    display: flex;
 }
