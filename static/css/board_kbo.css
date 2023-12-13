@@ -1,3 +1,4 @@
+
 ul li img{
     width: 22px;
     height: 22px;
@@ -11,7 +12,7 @@ ul li img{
 .pathBox ul {
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    /* background-color: pink; */
 }
 
 .mainText p {
@@ -67,24 +68,30 @@ ul li img{
 
 /* 숫자가 높을 수록 오른쪽, 숫자가 적을 수록 위로 올라감 */
 .kbo-btn1 {
-    transform: translate(80%, -250%);
+    transform: translate(190%, -160%);
+    width: 236px;
+    height: 106px;
 }
 
 .kbo-btn1 p {
     color: #FFF;
-    font-size: 38px;
-    font-style: normal;
+    font-size: 30px;
     font-weight: 500;
+    width: 190px;
+    margin: 0px 13px 26px 28px;
+
 }
 
 .kbo-btn1 button {
     border: none;
-    color: #FFF;
-    text-color: #ffffff;
+    color: #000; /* 텍스트 색상을 검정색으로 변경 */
+    background-color: #ffffff; /* 빨간색 배경색으로 변경 */
     width: 236px;
     height: 52px;
+    border-radius: 50px;
 }
 
 .kbo-team3 {
     margin-right: 136px;
 }
+
