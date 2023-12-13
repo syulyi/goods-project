@@ -11,6 +11,7 @@ ul li img{
 .pathBox ul {
     margin: 0;
     padding: 0;
+    background-color: pink;
 }
 
 .mainText p {
@@ -67,10 +68,21 @@ ul li img{
 /* 숫자가 높을 수록 오른쪽, 숫자가 적을 수록 위로 올라감 */
 .kbo-btn1 {
     transform: translate(80%, -250%);
+}
+
+.kbo-btn1 p {
     color: #FFF;
     font-size: 38px;
     font-style: normal;
     font-weight: 500;
+}
+
+.kbo-btn1 button {
+    border: none;
+    color: #FFF;
+    text-color: #ffffff;
+    width: 236px;
+    height: 52px;
 }
 
 .kbo-team3 {
