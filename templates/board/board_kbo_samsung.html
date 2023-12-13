@@ -1,0 +1,39 @@
+{% extends 'board/board_nav.html' %}
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
+    <div class="container">
+
+        <div class="contents">
+            <div class="mainBox">
+                <div class="pathBox">
+                    <ul>
+                        <li>
+                            <a href="{% url 'board:main' %}"><img src="{% static 'image/icon_home_3.png' '%}" class="icon_home"></a>
+                        </li>
+                        <li><a href="{% url 'board:main' %}">HOME</a></li>
+                        <li>/</li>
+                        <li><a href="{% url 'board:kbo' %}">KBO 야구</a></li>
+                        <li>/</li>
+                        <li><a href="{% url 'board:samsung' %}">삼성 라이온즈</a></li>
+                    </ul>
+                </div>
+                <div class="mainText">
+                    <p>삼성 라이온즈</p>
+                </div>
+                <p class="kbo-text">유니폼 비교하기</p>
+            </div>
+            <div class="category-kbo">
+                <ul class="category_kbo_1">
+                    <li>전체</li>
+                    <li>|</li>
+                    <li>유니폼</li>
+                    <li>|</li>
+                    <li>응원용품</li>
+                    <li>|</li>
+                    <li>의류</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

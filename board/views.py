@@ -21,3 +21,8 @@ class KboView(generic.ListView):
     model = Board
     template_name = 'board/board_kbo.html'
     context_object_name = 'board_main'
+
+class KboSamsung(generic.ListView):
+    model = Board
+    template_name = 'board/board_kbo_samsung.html'
+    context_object_name = 'board_samsung'
