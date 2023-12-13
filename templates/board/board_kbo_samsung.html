@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
     <link rel="stylesheet" href="{% static 'css/board_kbo_goods.css' %}">
 
+
     <div class="container">
 
         <div class="contents">
@@ -38,10 +39,12 @@
             </div>
             <div class="goods-contents">
                 <div class="goods-box">
-                    <img src="{% static 'image/kbo_samsung_002.png'%}">
-                    <p class="goods-title">2024 프로페셔널 선데이 모자</p>
-                    <p class="goods-hashtag">의류</p>
-                    <p class="goods-price">42,000원</p>
+                    <a href="{% url 'board:prod001' %}">
+                        <img src="{% static 'image/kbo_samsung_002.png'%}">
+                        <p class="goods-title">2024 프로페셔널 선데이 모자</p>
+                        <p class="goods-hashtag">의류</p>
+                        <p class="goods-price">42,000원</p>
+                    </a>
                 </div>
                 <div class="goods-box">
                     <img src="{% static 'image/kbo_samsung_003.png'%}">

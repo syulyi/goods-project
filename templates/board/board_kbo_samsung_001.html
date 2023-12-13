@@ -1,0 +1,39 @@
+{% extends 'board/board_nav.html' %}
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/board_prod.css' %}">
+
+    <div class="container">
+
+        <div class="contents">
+            <div class="mainBox">
+                <div class="pathBox">
+                    <ul>
+                        <li>
+                            <a href="{% url 'board:main' %}"><img src="{% static 'image/icon_home_3.png' '%}" class="icon_home"></a>
+                        </li>
+                        <li class="link_back"><a href="{% url 'board:main' %}">HOME</a></li>
+                        <li class="link_back">/</li>
+                        <li class="link_back"><a href="{% url 'board:kbo' %}">KBO 야구</a></li>
+                        <li class="link_back">/</li>
+                        <li><a href="{% url 'board:samsung' %}">삼성 라이온즈</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="prod-contents">
+                <div class="prod-img">
+                    <img src="{% static 'image/kbo_samsung_002.png' %}">
+                </div>
+                <div class="prod-payment">
+                    <ul class="prod-details">
+                        <li class="prod-title">2024 프로페셔널 선데이 모자</li>
+                        <li class="prod-price">가격</li>
+                        <li class="prod-delivery">배송비</li>
+                        <li class="prod">배송비</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

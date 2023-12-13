@@ -1,0 +1,43 @@
+.prod-contents {
+    display: flex;
+}
+
+.prod-img {
+    width: 757px;
+    height: 757px;
+    margin: 141px 196px 0px 195px;
+}
+
+.prod-payment {
+    width: 622px;
+    height: 757px;
+    margin: 141px 150px 0px 0px;
+}
+
+.prod-details {
+    margin: 212px 137px, 228px 22px;
+    background-color: pink;
+}
+
+.prod-title {
+    color: #2F2D2D;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.prod-price {
+    color: #686B6F;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 67px 0px 8px
+}
+
+.prod-delivery {
+    color: #686B6F;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+

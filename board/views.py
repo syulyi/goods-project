@@ -26,3 +26,8 @@ class KboSamsung(generic.ListView):
     model = Board
     template_name = 'board/board_kbo_samsung.html'
     context_object_name = 'board_samsung'
+
+class SamsungProd001(generic.ListView):
+    model = Board
+    template_name = 'board/board_kbo_samsung_001.html'
+    context_object_name = 'board_prod'
