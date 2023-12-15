@@ -6,6 +6,12 @@
     width: 757px;
     height: 757px;
     margin: 141px 196px 0px 195px;
+    background-color: pink;
+}
+
+.prod-img > img {
+    width: 757px;
+    height: 757px;
 }
 
 .prod-payment {
@@ -15,8 +21,9 @@
 }
 
 .prod-details {
-    margin: 212px 137px, 228px 22px;
-    background-color: yellow;
+    width: 520px;
+    height: 317px;
+    margin: 212px 137px 228px 0px;
 }
 
 .prod-title {
@@ -39,6 +46,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 28px;
 }
 
 .prod-comment {
@@ -47,5 +55,6 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
