@@ -10,6 +10,7 @@ from django.http import HttpResponse
 from .models import Board
 from django.views import generic
 from django.urls import reverse_lazy
+from .models import Product
 
 # 4.1 Board 어플리케이션 - 전체 리스트 조회 기능 작성
 def index(request):
@@ -31,3 +32,8 @@ class SamsungProd001(generic.ListView):
     model = Board
     template_name = 'board/board_kbo_samsung_001.html'
     context_object_name = 'board_prod'
+
+def compare_products(request):
+    products = Product.objects.all()
+    context = {'product':products}
+    return render(request, 'board/compare_product.html', context)

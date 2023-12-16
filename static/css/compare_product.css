@@ -1,0 +1,14 @@
+.product-selection {
+    background-color: pink;
+    margin: 186px 150px 0px;
+
+    display: flex;
+}
+
+.product-selection-box {
+    margin-right: 150px;
+}
+
+#product-box-1 {
+    background-color: yellow;
+}

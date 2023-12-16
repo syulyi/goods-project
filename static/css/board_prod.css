@@ -26,11 +26,17 @@
     margin: 212px 137px 228px 0px;
 }
 
-.prod-title {
+#prod-title {
     color: #2F2D2D;
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
+}
+
+/* 가격 Box*/
+#prod-prices {
+    margin: 67px 0px 8px;
+    background-color: yellow;
 }
 
 .prod-price {
@@ -38,7 +44,12 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    margin: 67px 0px 8px
+}
+
+/* 배송비 Box */
+#prod-deliveries {
+    margin-bottom: 28px;
+    background-color:yellow;
 }
 
 .prod-delivery {
@@ -46,15 +57,19 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    margin-bottom: 28px;
 }
 
-.prod-comment {
+/* 상품 소개 Box*/
+#prod-comment {
     color: #686B6F;
     font-family: Noto Sans KR;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     margin-bottom: 8px;
+    background-color: pink;
 }
 
+#prod-comment > p {
+    margin: 0px 0px 8px 0px;
+}
