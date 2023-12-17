@@ -1,0 +1,34 @@
+{% extends 'board/board_nav.html' %}
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/board_fan.css' %}">
+        <div class="mainBox">
+        <div class="pathBox">
+            <ul>
+                <li>
+                    <a href="{% url 'board:main' %}"><img src="{% static 'image/icon_home_3.png' '%}" class="icon_home"></a>
+                </li>
+                <li class="link_back"><a href="{% url 'board:main' %}">HOME</a></li>
+                <li class="link_back">/</li>
+                <li><a href="{% url 'board:fan' %}">팬 게시판</a></li>
+            </ul>
+        </div>
+        <div class="mainText">
+            <p>{{ board.subject }}</p>
+        </div>
+        <p class="kbo-text">{{ board.create_date }}</p>
+    </div>
+    <div class="post-content">
+        <div class="post-detail">
+            {{ board.content }}
+        </div>
+        <br>
+        <form action="{% url 'board:delete' board.id %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="삭제" class="btn-delete">
+        </form>
+    </div>
+
+
+{% endblock %}

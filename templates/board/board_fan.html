@@ -1,0 +1,50 @@
+{% extends 'board/board_nav.html' %}
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/board_kbo_goods.css' %}">
+    <link rel="stylesheet" href="{% static 'css/board_fan.css' %}">
+
+    <div class="container">
+        {% if board_fan %}
+        <div class="mainBox">
+            <div class="pathBox">
+                <ul>
+                    <li><a href="{% url 'board:main' %}"><img src="{% static 'image/icon_home_3.png' '%}" class="icon_home"></a></li>
+                    <li class="link_back"><a href="{% url 'board:main' %}">HOME</a></li>
+                    <li class="link_back">/</li>
+                    <li class="link_back"><a href="{% url 'board:fan' %}">팬 게시판</a></li>
+                </ul>
+            </div>
+            <div class="mainText">
+                <p>팬 게시판</p>
+            </div>
+            <p class="kbo-text">모든 스포츠 팬들의 소통창구입니다. 자유롭게 얘기를 나눠보세요.</p>
+        </div>
+        <div class="list-box">
+            <div class="list-box1">
+                <button class="upload-btn" type="button">
+                    <a href="{% url 'board:create_fan' %}">
+                        <p>글쓰기</p>
+                    </a>
+                </button>
+            </div>
+            <div class="list-box2">
+                <table class="table">
+                    {% for board in board_fan %}
+                        <tr class="custext">
+                            <td class="table-1"><a href="/board/{{ board.id }}/">{{ board.subject }}</a></td>
+                            <td class="table-2"><a href="/board/{{ board.id }}/">{{ board.content }}</a></td>
+                            <td class="table-3">{{ board.create_date }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {% else %}
+            <p>게시글이 없습니다.</p>
+        {% endif %}
+    </div>
+{% endblock %}

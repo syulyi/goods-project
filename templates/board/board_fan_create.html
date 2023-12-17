@@ -1,0 +1,29 @@
+{% extends 'board/board_nav.html' %}
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/board_fan.css' %}">
+        <div class="mainBox">
+        <div class="pathBox">
+            <ul>
+                <li>
+                    <a href="{% url 'board:main' %}"><img src="{% static 'image/icon_home_3.png' '%}" class="icon_home"></a>
+                </li>
+                <li class="link_back"><a href="{% url 'board:main' %}">HOME</a></li>
+                <li class="link_back">/</li>
+                <li class="link_back"><a href="{% url 'board:fan' %}">팬 게시판</a></li>
+                <li class="link_back">/</li>
+                <li><a href="{% url 'board:create_fan' %}">작성하기</a></li>
+            </ul>
+        </div>
+        <div class="mainText">
+            <p>게시물 작성</p>
+        </div>
+        <p class="kbo-text">게시판 작성 중</p>
+    </div>
+    <form action="{% url 'board:create_fan' %}" method="post" class="post-box">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-sm">등록</button>
+    </form>
+{% endblock %}

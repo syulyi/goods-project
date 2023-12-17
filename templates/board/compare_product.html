@@ -26,32 +26,59 @@
             <div class="product-selection">
                 <div class="product-selection-box" id="product-box-1">
                     <select id="product-select-1" onchange="updateImage(1)">
-                        <option value="none">선택하세요.</option>
-                        <option value="prod_001">프로페셔널 모자</option>
-                        <option value="prod_002">유니폼</option>
-                        <option value="prod_003">춘추점퍼</option>
+                        <option value="none">상품1 선택하세요</option>
+                        <option value="kbo_samsung_prod_001">[삼성] 2023 프로페셔널 선데이 모자</option>
+                        <option value="kbo_samsung_prod_002">[삼성] 프로페셔널 올드(2002) 유니폼</option>
+                        <option value="kbo_samsung_prod_003">[삼성] 2023 춘추 점퍼</option>
+                        <option value="kbo_samsung_prod_004">[삼성] 응원타올</option>
+                        <option value="kbo_samsung_prod_005">[삼성] 팔각 응원봉</option>
+                        <option value="kbo_samsung_prod_006">[삼성] 공식 응원봉 오피셜</option>
+                        <option value="kbo_nc_prod_001">[NC] 2023 어센틱 벛꽃 유니폼</option>
+                        <option value="kbo_nc_prod_002">[NC] 클러치 퍼즈업 유니폼</option>
+                        <option value="kbo_nc_prod_003">[NC] 클러치 원정 유니폼</option>
+                        <option value="kbo_nc_prod_004">[NC] 클러치 퍼즈업 모자</option>
+                        <option value="kbo_nc_prod_005">[NC] NC 다이노스 인형 20 춘식이</option>
+                        <option value="kbo_nc_prod_006">[NC] 민트 플라스틱 응원 배트</option>
                     </select>
                     <div id="selected-image-container-1" style="display: none;">
                         <img id="selected-image-1" src="{% static 'image/kbo_samsung_001.png' %}" alt="Selected Product Image">
                     </div>
                 </div>
                 <div class="product-selection-box" id="product-box-2">
-                    <label for="product-select-2">상품을 선택해주세요.</label>
                     <select id="product-select-2" onchange="updateImage(2)">
-                        <option value="none">선택하세요.</option>
-                        <option value="prod_001">프로페셔널 모자</option>
-                        <option value="prod_002">유니폼</option>
+                        <option value="none">상품2 선택하세요</option>
+                        <option value="kbo_samsung_prod_001">[삼성] 2023 프로페셔널 선데이 모자</option>
+                        <option value="kbo_samsung_prod_002">[삼성] 프로페셔널 올드(2002) 유니폼</option>
+                        <option value="kbo_samsung_prod_003">[삼성] 2023 춘추 점퍼</option>
+                        <option value="kbo_samsung_prod_004">[삼성] 응원타올</option>
+                        <option value="kbo_samsung_prod_005">[삼성] 팔각 응원봉</option>
+                        <option value="kbo_samsung_prod_006">[삼성] 공식 응원봉 오피셜</option>
+                        <option value="kbo_nc_prod_001">[NC] 2023 어센틱 벛꽃 유니폼</option>
+                        <option value="kbo_nc_prod_002">[NC] 클러치 퍼즈업 유니폼</option>
+                        <option value="kbo_nc_prod_003">[NC] 클러치 원정 유니폼</option>
+                        <option value="kbo_nc_prod_004">[NC] 클러치 퍼즈업 모자</option>
+                        <option value="kbo_nc_prod_005">[NC] NC 다이노스 인형 20 춘식이</option>
+                        <option value="kbo_nc_prod_006">[NC] 민트 플라스틱 응원 배트</option>
                     </select>
                     <div id="selected-image-container-2">
                         <img id="selected-image-2" src="{% static 'image/kbo_samsung_002.png' %}" alt="Selected Product Image">
                     </div>
                 </div>
                 <div class="product-selection-box" id="product-box-3">
-                    <label for="product-select-3">상품을 선택해주세요.</label>
                     <select id="product-select-3" onchange="updateImage(3)">
-                        <option value="none">선택하세요.</option>
-                        <option value="prod_001">프로페셔널 모자</option>
-                        <option value="prod_002">유니폼</option>
+                        <option value="none">상품3 선택하세요</option>
+                        <option value="kbo_samsung_prod_001">[삼성] 2023 프로페셔널 선데이 모자</option>
+                        <option value="kbo_samsung_prod_002">[삼성] 프로페셔널 올드(2002) 유니폼</option>
+                        <option value="kbo_samsung_prod_003">[삼성] 2023 춘추 점퍼</option>
+                        <option value="kbo_samsung_prod_004">[삼성] 응원타올</option>
+                        <option value="kbo_samsung_prod_005">[삼성] 팔각 응원봉</option>
+                        <option value="kbo_samsung_prod_006">[삼성] 공식 응원봉 오피셜</option>
+                        <option value="kbo_nc_prod_001">[NC] 2023 어센틱 벛꽃 유니폼</option>
+                        <option value="kbo_nc_prod_002">[NC] 클러치 퍼즈업 유니폼</option>
+                        <option value="kbo_nc_prod_003">[NC] 클러치 원정 유니폼</option>
+                        <option value="kbo_nc_prod_004">[NC] 클러치 퍼즈업 모자</option>
+                        <option value="kbo_nc_prod_005">[NC] NC 다이노스 인형 20 춘식이</option>
+                        <option value="kbo_nc_prod_006">[NC] 민트 플라스틱 응원 배트</option>
                     </select>
                     <div id="selected-image-container-3">
                         <img id="selected-image-3" src="{% static 'image/kbo_samsung_003.png' %}" alt="Selected Product Image">
@@ -60,5 +87,6 @@
             </div>
         </div>
     </div>
+
     <script src="{% static 'js/compare_product.js' %}"></script>
 {% endblock %}

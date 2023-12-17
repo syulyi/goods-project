@@ -93,7 +93,81 @@ ul li img{
     border-radius: 50px;
 }
 
+/* 숫자가 높을 수록 오른쪽, 숫자가 적을 수록 위로 올라감 */
+.kbo-btn2 {
+    transform: translate(190%, -160%);
+    width: 236px;
+    height: 106px;
+}
+
+.kbo-btn2 p {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    width: 190px;
+    margin: 0px 13px 26px 28px;
+
+}
+
+.kbo-btn2 button {
+    border: none;
+    color: #000; /* 텍스트 색상을 검정색으로 변경 */
+    background-color: #ffffff; /* 빨간색 배경색으로 변경 */
+    width: 236px;
+    height: 52px;
+    border-radius: 50px;
+}
+
+
 .kbo-team3 {
     margin-right: 136px;
 }
 
+/* 숫자가 높을 수록 오른쪽, 숫자가 적을 수록 위로 올라감 */
+.kbo-btn3 {
+    transform: translate(190%, -160%);
+    width: 236px;
+    height: 106px;
+}
+
+.kbo-btn3 p {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    width: 190px;
+    margin: 0px 13px 26px 72px;
+
+}
+
+.kbo-btn3 button {
+    border: none;
+    color: #000;
+    background-color: #ffffff;
+    width: 236px;
+    height: 52px;
+    border-radius: 50px;
+}
+
+/* 숫자가 높을 수록 오른쪽, 숫자가 적을 수록 위로 올라감 */
+.kbo-btn4 {
+    transform: translate(190%, -160%);
+    width: 236px;
+    height: 106px;
+}
+
+.kbo-btn4 p {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    width: 190px;
+    margin: 0px 13px 26px 28px;
+}
+
+.kbo-btn4 button {
+    border: none;
+    color: #000; /* 텍스트 색상을 검정색으로 변경 */
+    background-color: #ffffff;
+    width: 236px;
+    height: 52px;
+    border-radius: 50px;
+}

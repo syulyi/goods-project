@@ -11,8 +11,10 @@ from django.db import models
 # ------------------------
 
 class Board(models.Model):
-    title = models.CharField(max_length=200)
-    category = models.TextField()
+    # title = models.CharField(max_length=200)
+    # category = models.TextField()
+    subject = models.CharField(max_length=200, default='Default Subject')
+    content = models.TextField(blank=True, null=True)
     create_date = models.DateTimeField()
 
 # 12-15

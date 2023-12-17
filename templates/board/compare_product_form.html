@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'board:compare_products' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">비교하기</button>
+</form>

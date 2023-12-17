@@ -1,0 +1,10 @@
+{% for product in products %}
+<div class="goods-box" id="{{ product.id }}">
+    <a href="{% url 'board:prod001' %}">
+        <img src="{{ product.image.url }}">
+        <p class="goods-title">{{ product.name }}</p>
+        <p class="goods-hashtag">{{ product.description }}</p>
+        <p class="goods-price">{{ product.price }}원</p>
+    </a>
+</div>
+{% endfor %}
