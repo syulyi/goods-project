@@ -111,8 +111,8 @@ ul li img{
 
 .kbo-btn2 button {
     border: none;
-    color: #000; /* 텍스트 색상을 검정색으로 변경 */
-    background-color: #ffffff; /* 빨간색 배경색으로 변경 */
+    color: #000;
+    background-color: #ffffff;
     width: 236px;
     height: 52px;
     border-radius: 50px;
@@ -165,7 +165,7 @@ ul li img{
 
 .kbo-btn4 button {
     border: none;
-    color: #000; /* 텍스트 색상을 검정색으로 변경 */
+    color: #000;
     background-color: #ffffff;
     width: 236px;
     height: 52px;

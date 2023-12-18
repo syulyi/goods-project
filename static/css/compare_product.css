@@ -10,14 +10,12 @@
 .product-selection-box select {
         width: 440px;
         height: 60px;
-
         outline: none;
-        appearance: none; /* 기본 스타일 제거 (일부 브라우저에서) */
-        padding: 5px; /* 선택 영역 내에 여백 추가 */
-        font-size: 20px; /* 원하는 폰트 크기로 조절 */
-
-        color: #333; /* 선택 영역 텍스트 색상 설정 */
-        border-radius: 10px; /* 선택 영역 둥글게 만들기 */
+        appearance: none;
+        padding: 5px;
+        font-size: 20px;
+        color: #333;
+        border-radius: 10px;
         margin-bottom: 40px;
 }
 

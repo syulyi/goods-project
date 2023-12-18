@@ -31,11 +31,11 @@
 
 
 .table-1 a {
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 .table-2 a {
-    margin-right: 410px;
+    margin-right: 710px;
 }
 
 .post-box {
@@ -63,9 +63,9 @@
 }
 
 .post-box textarea {
-    height: 80px; /* 높이 조절 (원하는 크기로 변경) */
-    padding: 10px; /* 내부 여백 추가 */
-    box-sizing: border-box; /* 패딩을 높이에 포함시키기 위한 속성 */
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 /* board_fan_detail.html */
