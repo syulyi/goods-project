@@ -6,7 +6,6 @@
     width: 757px;
     height: 757px;
     margin: 141px 196px 0px 195px;
-    background-color: pink;
 }
 
 .prod-img > img {
@@ -36,7 +35,6 @@
 /* 가격 Box*/
 #prod-prices {
     margin: 67px 0px 8px;
-    background-color: yellow;
 }
 
 .prod-price {
@@ -46,10 +44,20 @@
     font-weight: 500;
 }
 
+.prod-price-num{
+    margin-left: 58px;
+    color: #2F2D2D;
+    font-family: Noto Sans KR;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px; /* 41.667% */
+    letter-spacing: 0.3px;
+}
+
 /* 배송비 Box */
 #prod-deliveries {
     margin-bottom: 28px;
-    background-color:yellow;
 }
 
 .prod-delivery {
@@ -57,6 +65,16 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
+}
+
+.prod-delivery-num {
+    margin-left: 60px;
+    color: #2F2D2D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px; /* 50% */
+    letter-spacing: 0.3px;
 }
 
 /* 상품 소개 Box*/
@@ -67,7 +85,6 @@
     font-style: normal;
     font-weight: 500;
     margin-bottom: 8px;
-    background-color: pink;
 }
 
 #prod-comment > p {

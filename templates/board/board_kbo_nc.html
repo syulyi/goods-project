@@ -1,0 +1,82 @@
+{% extends 'board/board_nav.html' %}
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/board_kbo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/board_kbo_goods.css' %}">
+
+
+    <div class="container">
+
+        <div class="contents">
+            <div class="mainBox">
+                <div class="pathBox">
+                    <ul>
+                        <li><a href="{% url 'board:main' %}"><img src="{% static 'image/icon_home_3.png' '%}" class="icon_home"></a></li>
+                        <li class="link_back"><a href="{% url 'board:main' %}">HOME</a></li>
+                        <li class="link_back">/</li>
+                        <li class="link_back"><a href="{% url 'board:kbo' %}">KBO 야구</a></li>
+                        <li class="link_back">/</li>
+                        <li><a href="{% url 'board:samsung' %}">NC 다이노스</a></li>
+                    </ul>
+                </div>
+                <div class="mainText">
+                    <p>NC 다이노스</p>
+                </div>
+                <p class="kbo-text"><a href="{% url 'board:compare_products' %}">유니폼 비교하기</a></p>
+            </div>
+            <div class="category-kbo">
+                <ul class="category_kbo_1">
+                    <li>전체</li>
+                    <li>|</li>
+                    <li>유니폼</li>
+                    <li>|</li>
+                    <li>응원용품</li>
+                    <li>|</li>
+                    <li>의류</li>
+                </ul>
+            </div>
+            <div class="goods-contents">
+                <div class="goods-box" id="nc_prod_001">
+                    <a href="{% url 'board:prod001' %}">
+                        <img src="{% static 'image/kbo_nc_001.png'%}">
+                        <p class="goods-title" id="goods_name_001">2023 어센틱 벛꽃 유니폼</p>
+                        <p class="goods-hashtag">유니폼</p>
+                        <p class="goods-price">154,000원</p>
+                    </a>
+                </div>
+                <div class="goods-box" id="nc_prod_002">
+                    <img src="{% static 'image/kbo_nc_002.png'%}">
+                    <p class="goods-title" id="goods_name_002">클러치 퍼즈업 유니폼</p>
+                    <p class="goods-hashtag">유니폼</p>
+                    <p class="goods-price">135,000원</p>
+                </div>
+                <div class="goods-box" id="nc_prod_003">
+                    <img src="{% static 'image/kbo_nc_003.png'%}">
+                    <p class="goods-title">클러치 원정 유니폼</p>
+                    <p class="goods-hashtag">유니폼</p>
+                    <p class="goods-price">89,000원</p>
+                </div>
+            </div>
+            <div class="goods-contents" id="nc_prod_004">
+                <div class="goods-box">
+                    <img src="{% static 'image/kbo_nc_004.png'%}">
+                    <p class="goods-title">클러치 퍼즈업 모자</p>
+                    <p class="goods-hashtag">의류</p>
+                    <p class="goods-price">33,000원</p>
+                </div>
+                <div class="goods-box" id="nc_prod_005">
+                    <img src="{% static 'image/kbo_nc_005.png'%}">
+                    <p class="goods-title">NC 다이노스 인형 20 춘식이</p>
+                    <p class="goods-hashtag">응원도구</p>
+                    <p class="goods-price">26,000원</p>
+                </div>
+                <div class="goods-box" id="nc_prod_006">
+                    <img src="{% static 'image/kbo_nc_006.png'%}">
+                    <p class="goods-title">민트 플라스틱 응원배트</p>
+                    <p class="goods-hashtag">응원도구</p>
+                    <p class="goods-price">6,000원</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

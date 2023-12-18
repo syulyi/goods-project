@@ -62,6 +62,8 @@ class update(generic.UpdateView):
     template_name_suffix = '_form'
     # form_class = YourForm
 
+
+# KBO 삼성
 class KboView(generic.ListView):
     model = Board
     template_name = 'board/board_kbo.html'
@@ -77,11 +79,16 @@ class SamsungProd001(generic.ListView):
     template_name = 'board/board_kbo_samsung_001.html'
     context_object_name = 'board_prod'
 
-# def compare_products(request):
-#     products = Product.objects.all()
-#     context = {'product':products}
-#     # return render(request, 'board/compare_product.html', context)
-#     return render(request, 'board/compare_product.html', {'products': products})
+# KBO 엔씨
+class KboNc(generic.ListView):
+    model = Board
+    template_name = 'board/board_kbo_nc.html'
+    context_object_name = 'board_nc'
+
+class NcProd001(generic.ListView):
+    model = Board
+    template_name = 'board/board_kbo_nc_001.html'
+    context_object_name = 'board_prod'
 
 def compare_product(request):
     products = Product.objects.all()
@@ -103,22 +110,6 @@ def compare_product(request):
             'selected_product_1': selected_product_1,
             'selected_product_2': selected_product_2,
         })
-
-    # # 추가
-    # products = Product.objects.all()
-    # form = CompareProductForm(request.POST or None)
-    #
-    # if request.method == 'POST' and form.is_valid():
-    #     # selected_product = form.cleaned_data['products']
-    #     # context = {'selected_product': selected_product}
-    #     # return render(request, 'board/compare_product.html', context)
-    #
-    #     # 추가
-    #     product1_id = form.cleaned_data['product1'].id
-    #     product2_id = form.cleaned_data['product2'].id
-    #     result = f'비교 결과: Product {product1_id} vs. Product {product2_id}'
-    #     return render(request, 'board/compare_product.html', {'products': products, 'form': form, 'result': result})
-
 
 
     # return render(request, 'board/compare_product_form.html', {'form': form})
